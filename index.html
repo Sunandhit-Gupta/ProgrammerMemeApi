@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>ApiMemer</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <!--                 HEAD                         -->
+    <div class="head">This is My Meme Site
+        <span class="span">Sunandhit Gupta</span>
+    </div>
+    <hr>
+
+    <!-- ..........................Container........................................ -->
+
+    <div class="container" id="ct">
+        <img class = "immg" id = "ig" src= "" alt="Funny Gif" width="100px">\   
+    </div>
+
+    <hr>
+    <!--           NEXT BUTTON                 -->
+
+    <div class="next">
+        <button onclick="clicked()" class="nxtbtn">NEXT</button>
+        <button id="ibtn" class="ibtn">MemeNo = 0</button>
+        <button id="back" class="back" onclick="back()">BACK</button>
+
+        <!--              FORMS                  -->
+        <form id="form" class="form">
+
+            <input type="number" placeholder="MemeNo" id="inpt" max="140" min="0" class="inpt">
+            <input type="submit" value="JUMP" class="jump">
+        </form>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

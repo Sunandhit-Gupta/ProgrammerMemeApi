@@ -1,0 +1,78 @@
+*{background-color: black;
+    user-select: none;
+
+}
+.head{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    width: 100vw;
+    background-color: antiquewhite;
+    font-size: 20px;
+    
+}
+.span{
+    color: aliceblue;
+    background-color: grey;
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.container{
+    text-align: center;
+    height: 70vh;
+    width: 100vw;
+    background-color: black;
+    margin-top: 10px;
+
+}
+
+.next{
+    text-align: center;
+    margin: auto;
+    background-color: darkorange;
+    
+}
+
+.nxtbtn{
+    background-color: aqua;
+    border-color: aliceblue;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 3px;
+}
+.ibtn{
+    background-color: burlywood;
+    font-weight: bold;
+    user-select: none;
+    margin-top: 3px;
+}
+.back{
+    background-color: pink;
+    border-color: aliceblue;
+    margin-top: 3px;
+}
+.immg{
+    height: 50vh;
+    width: 50vw;
+    padding-top: 30px;
+    margin-top: 4px;
+    background-color: black;
+
+}
+.form{
+    margin-top: 3px;
+    color: aliceblue;
+}
+.inpt{
+    color: aliceblue;
+    user-select: none;
+}
+.jump{
+    color: aliceblue;
+    border-color: aliceblue;
+    cursor: pointer;
+    user-select: none;
+}
