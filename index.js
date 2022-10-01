@@ -11,7 +11,7 @@ const options = {
 // -----------------------------------------------------------------------------------------
 fetch('https://programming-memes-reddit.p.rapidapi.com/', options)
 	.then(response => response.json())
-	.then(response =>{ console.log(response[0].link)
+	.then(response =>{ /*console.log(response[0].link)*/
         element = document.getElementById("ig");
         element.src = response[0].link; 
       
@@ -22,20 +22,19 @@ fetch('https://programming-memes-reddit.p.rapidapi.com/', options)
 let i = 0;
  function clicked(){ 
     i = i+1;
-    if(i>=141){
-        console.log("zayda hogya re");
+
+    if(i>=141 || i<0){
+         console.log("MaxLimit:140 , MinLimit:0");
          i = 0;
      }
 
-    console.log(i);
     fetch('https://programming-memes-reddit.p.rapidapi.com/', options)
 	.then(response => response.json())
-	.then(response =>{ console.log(response[i].link);
+	.then(response =>{ /*console.log(response[i].link);*/
         element = document.getElementById("ig");
         element.src = response[i].link; 
         element2 = document.getElementById("ibtn");
-        element2.innerHTML = "MemeNo = "+i ;
-      
+        element2.innerHTML = "MemeNo = "+i;    
     }).catch(err => console.error(err));
 
  }
@@ -55,9 +54,7 @@ function back(){
 var frm = document.getElementById("form");
 frm.addEventListener('submit',function(event){
     event.preventDefault() //prevents from auto submitting
-    
     var inpt = document.getElementById("inpt").value;
-
     i=inpt-1;
     clicked();
 })
